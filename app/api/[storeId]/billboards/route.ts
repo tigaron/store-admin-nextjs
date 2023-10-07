@@ -2,7 +2,7 @@ import prismadb from "@/lib/prismadb";
 import { auth } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
 
-export async function GET(req: Request, { params }: { params: { storeId: string } }) {
+export async function GET(_req: Request, { params }: { params: { storeId: string } }) {
   try {
     const billboards = await prismadb.billboard.findMany({
       where: {
