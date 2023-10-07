@@ -16,10 +16,10 @@ export const APIList: React.FC<APIListProps> = ({ entityName, entityIdName }) =>
   return (
     <>
       <APIAlert title="GET" variant="public" description={`${baseUrl}/${entityName}`} />
-      <APIAlert title="GET" variant="public" description={`${baseUrl}/${entityName}/{${entityIdName}}`} />
+      <APIAlert title="GET" variant="public" description={`${baseUrl}/${entityName}/`} editLabel="BILLBOARD_ID" />
       <APIAlert title="POST" variant="admin" description={`${baseUrl}/${entityName}`} />
-      <APIAlert title="PATCH" variant="admin" description={`${baseUrl}/${entityName}/{${entityIdName}}`} />
-      <APIAlert title="DELETE" variant="admin" description={`${baseUrl}/${entityName}/{${entityIdName}}`} />
+      <APIAlert title="PATCH" variant="admin" description={`${baseUrl}/${entityName}/`} editLabel="BILLBOARD_ID" />
+      <APIAlert title="DELETE" variant="admin" description={`${baseUrl}/${entityName}/`} editLabel="BILLBOARD_ID" />
     </>
   );
 };
