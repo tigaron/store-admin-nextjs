@@ -10,7 +10,6 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator } from "@/components/ui/command";
-import path from "path";
 
 type PopoverTriggerProps = React.ComponentPropsWithoutRef<typeof PopoverTrigger>;
 
@@ -43,7 +42,7 @@ export default function StoreSwitcher({ className, items = [] }: StoreSwitcherPr
       <PopoverTrigger asChild>
         <Button variant="outline" size="sm" role="combobox" aria-expanded={open} aria-label="Select a store" className={cn("w-[200px] justify-between", className)}>
           <StoreIcon className="mr-2 h-4 w-4" />
-          Current Store
+          {currentStore?.label}
           <ChevronsUpDown className="ml-auto h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>

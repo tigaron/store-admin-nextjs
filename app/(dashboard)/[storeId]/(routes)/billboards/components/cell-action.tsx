@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import { Copy, Edit, MoreHorizontal, Trash } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 
-import { BillboardColumn } from "@/components/billboard-columns";
+import { BillboardColumn } from "./billboard-columns";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { AlertModal } from "@/components/modals/alert-modal";
