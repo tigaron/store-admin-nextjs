@@ -5,7 +5,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge, BadgeProps } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import toast from "react-hot-toast";
-import EditableText from "./edit-text";
+import EditableText from "@/components/ui/edit-text";
 import { useState } from "react";
 
 interface APIAltertProps {

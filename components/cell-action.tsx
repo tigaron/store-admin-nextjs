@@ -3,12 +3,12 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { Copy, Edit, MoreHorizontal, Trash } from "lucide-react";
+import { useParams, useRouter } from "next/navigation";
 
 import { BillboardColumn } from "@/components/billboard-columns";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { useParams, useRouter } from "next/navigation";
-import { AlertModal } from "./modals/alert-modal";
+import { AlertModal } from "@/components/modals/alert-modal";
 
 interface CellActionProps {
   data: BillboardColumn;
@@ -75,5 +75,3 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
     </>
   );
 };
-
-export default CellAction;

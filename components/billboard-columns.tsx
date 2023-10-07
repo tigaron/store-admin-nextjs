@@ -1,9 +1,9 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import { ArrowUpDown, MoreHorizontal } from "lucide-react";
+import { ArrowUpDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import CellAction from "./cell-action";
+import { CellAction } from "./cell-action";
 
 export type BillboardColumn = {
   id: string;

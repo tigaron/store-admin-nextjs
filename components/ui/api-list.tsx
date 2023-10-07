@@ -1,6 +1,6 @@
 import { useOrigin } from "@/hooks/use-origin";
 import { useParams } from "next/navigation";
-import { APIAlert } from "./api-alert";
+import { APIAlert } from "@/components/ui/api-alert";
 
 interface APIListProps {
   entityName: string;
