@@ -12,9 +12,11 @@ import { AlertModal } from "@/components/modals/alert-modal";
 import { BillboardColumn } from "@/app/(dashboard)/[storeId]/(routes)/billboards/components/billboard-columns";
 import { CategoryColumn } from "@/app/(dashboard)/[storeId]/(routes)/categories/components/category-columns";
 import { SizeColumn } from "@/app/(dashboard)/[storeId]/(routes)/sizes/components/size-columns";
+import { ColorColumn } from "@/app/(dashboard)/[storeId]/(routes)/colors/components/color-columns";
+import { ProductColumn } from "@/app/(dashboard)/[storeId]/(routes)/products/components/product-columns";
 
 interface CellActionProps {
-  data: BillboardColumn | CategoryColumn | SizeColumn;
+  data: BillboardColumn | CategoryColumn | SizeColumn | ColorColumn | ProductColumn;
   apiName: string;
   apiRoute: string;
 }
