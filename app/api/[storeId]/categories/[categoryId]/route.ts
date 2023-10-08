@@ -8,6 +8,9 @@ export async function GET(_req: Request, { params }: { params: { storeId: string
       where: {
         id: params.categoryId,
       },
+      include: {
+        billboard: true,
+      },
     });
 
     if (!category) return new NextResponse("Not found", { status: 404 });
