@@ -6,9 +6,10 @@ import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Heading } from "@/components/ui/heading";
 import { Separator } from "@/components/ui/separator";
-import { BillboardColumn, columns } from "./billboard-columns";
 import { DataTable } from "@/components/ui/data-table";
 import { APIList } from "@/components/ui/api-list";
+
+import { BillboardColumn, columns } from "./billboard-columns";
 
 interface BillboardClientProps {
   data: BillboardColumn[];

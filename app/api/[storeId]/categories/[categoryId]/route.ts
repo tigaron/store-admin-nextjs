@@ -68,7 +68,7 @@ export async function DELETE(_req: Request, { params }: { params: { storeId: str
 
     if (!params.storeId) return new NextResponse("Store ID is required", { status: 400 });
 
-    if (!params.categoryId) return new NextResponse("Billboard ID is required", { status: 400 });
+    if (!params.categoryId) return new NextResponse("Category ID is required", { status: 400 });
 
     const storeByUserId = await prismadb.store.findFirst({
       where: {
