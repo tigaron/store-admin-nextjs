@@ -14,9 +14,10 @@ import { CategoryColumn } from "@/app/(dashboard)/[storeId]/(routes)/categories/
 import { SizeColumn } from "@/app/(dashboard)/[storeId]/(routes)/sizes/components/size-columns";
 import { ColorColumn } from "@/app/(dashboard)/[storeId]/(routes)/colors/components/color-columns";
 import { ProductColumn } from "@/app/(dashboard)/[storeId]/(routes)/products/components/product-columns";
+import { OrderColumn } from "@/app/(dashboard)/[storeId]/(routes)/orders/components/order-columns";
 
 interface CellActionProps {
-  data: BillboardColumn | CategoryColumn | SizeColumn | ColorColumn | ProductColumn;
+  data: BillboardColumn | CategoryColumn | SizeColumn | ColorColumn | ProductColumn | OrderColumn;
   apiName: string;
   apiRoute: string;
 }
