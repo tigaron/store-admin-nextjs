@@ -24,7 +24,7 @@ export async function POST(req: Request) {
   const addressString = addressComponents.filter(Boolean).join(", ");
 
   if (event.type === "checkout.session.completed") {
-    const order = await prismadb.order.update({
+    /* const order = */ await prismadb.order.update({
       where: {
         id: session?.metadata?.orderId,
       },
@@ -38,7 +38,7 @@ export async function POST(req: Request) {
       },
     });
 
-    const productIds = order.orderItems.map((orderItem) => orderItem.productId);
+    /* const productIds = order.orderItems.map((orderItem) => orderItem.productId);
 
     await prismadb.product.updateMany({
       where: {
@@ -49,7 +49,7 @@ export async function POST(req: Request) {
       data: {
         isArchived: true,
       },
-    });
+    }); */
   }
 
   return new NextResponse(null, { status: 200 });
