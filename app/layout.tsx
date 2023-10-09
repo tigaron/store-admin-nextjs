@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Analytics } from "@vercel/analytics/react";
 
 import { ModalProvider } from "@/providers/modal-provider";
 import { ToastProvider } from "@/providers/toast-provider";
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ToastProvider />
           <ModalProvider />
           {children}
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
