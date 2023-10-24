@@ -1,7 +1,7 @@
 {
   "crons": [
     {
-      "path": "/api/clnehfyx90000lbb44nkz4a2m",
+      "path": "/api/clnih4xtl0000la0814ke11v1/categories",
       "schedule": "*/10 * * * *"
     }
   ]
