@@ -1,8 +1,0 @@
-{
-  "crons": [
-    {
-      "path": "/api/clnih4xtl0000la0814ke11v1/categories",
-      "schedule": "*/10 * * * *"
-    }
-  ]
-}
