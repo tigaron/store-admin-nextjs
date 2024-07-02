@@ -31,7 +31,7 @@ const EditableText: React.FC<EditableTextProps> = ({ value, onChange }) => {
       inputRef.current.focus();
       inputRef.current.setSelectionRange(0, editedValue.length);
     }
-  }, [isEditing]);
+  }, [isEditing, editedValue]);
 
   const inputStyle = {
     width: `${editedValue.length + 1}ch`,
